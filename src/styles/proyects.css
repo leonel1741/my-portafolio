@@ -1,0 +1,134 @@
+.proyects-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    overflow: hidden;
+    margin: 5px 0;
+    background: linear-gradient(45deg, rgba(211, 240, 244, 1) 35%, rgba(59, 153, 186, 1) 100%);
+    box-shadow: inset 0 0 20px 1px rgba(211, 240, 244, 1), inset 0 20px 20px 0px rgba(59, 153, 186, 1),
+        0 -5px 5px 3px rgb(128, 197, 222), 0 10px 10px 2px rgba(211, 240, 244, 1);
+}
+
+.proyects-container h1 {
+    color: #FFF;
+    position: relative;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.video-proyects {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.proyects-section {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.proyect-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    cursor: grab;
+    left: -100%;
+    opacity: 0;
+    transition: .75s all linear;
+}
+
+.proyect-item-left {
+    left: -100%;
+}
+
+.proyect-item-left.proyect-visible-left {
+    opacity: 1;
+    left: 0;
+}
+
+.proyect-item-right {
+    left: 100%;
+}
+
+.proyect-item-right.proyect-visible-right {
+    opacity: 1;
+    left: 0;
+}
+
+.section {
+    max-width: 600px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.image-proyect {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+
+
+.hover {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: .2s all linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    opacity: 0;
+}
+
+.hover a {
+    text-decoration: none;
+    background-color: #3B99BA;
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: .3s all linear;
+}
+
+.hover a:hover {
+    transform: scale(1.1);
+    background-color: #FFF;
+    color: #3B99BA;
+}
+
+.section:hover .hover {
+    width: 100%;
+    height: 100%;
+    transition: .3s all linear;
+    opacity: 1;
+}
+
+.btn-link-proyect {
+    display: flex;
+    gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .hover {
+        gap: 2rem;
+    }
+}

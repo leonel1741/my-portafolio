@@ -1,0 +1,146 @@
+.presentation-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 3rem;
+    padding: 10px;
+    /* background-color: #3B99BA; */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 1;
+}
+
+.video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+}
+
+.presentation-item {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: rgb(195, 195, 29);
+    gap: 10px;
+}
+
+.presentation-item div {
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.presentation-item h1 {
+    text-align: left;
+    white-space: nowrap;
+    animation: typingH1 1.5s alternate steps(3) 0.3s,
+        blink .5s infinite step-end alternate;
+    overflow: hidden;
+    font-size: 35px;
+    margin: 0;
+
+}
+
+.presentation-item h2 {
+    text-align: left;
+    white-space: nowrap;
+    width: 10ch;
+    animation: typingH2 1.5s steps(10) 1.3s,
+        blink .5s infinite step-end alternate;
+    font-size: 35px;
+    margin: 0;
+}
+
+.presentation-item h3 {
+    text-align: left;
+    font-size: 30px;
+    /* width: 100%; */
+    margin: 0;
+    min-height: 40px;
+    /* padding: 0 15px; */
+    /* position: relative; */
+    border-right: 0.08em solid #666;
+}
+
+/* .presentation-item h3::before {
+    content: " ";
+    height: 100px;
+    color: aqua;
+    width: 10px;
+} */
+
+/* @keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+} */
+
+@keyframes typingH1 {
+    from {
+        border-right: 4px solid;
+        width: 0;
+    }
+
+    to {
+        width: 3.5ch;
+    }
+}
+
+@keyframes typingH2 {
+    from {
+        border-right: 4px solid;
+        width: 0;
+    }
+
+    to {
+        width: 10ch;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: transparent;
+    }
+}
+
+.logo {
+    position: relative;
+    background-color: rgba(191, 192, 192, 0.8);
+    border-radius: 60% 0px 60% 0px;
+    box-shadow: 0 0 10px 10px rgba(174, 172, 172, .5);
+    z-index: 2;
+}
+
+@media (min-width: 768px) {
+    .presentation-container h1 {
+        font-size: 60px;
+    }
+
+    .presentation-container h2 {
+        font-size: 60px;
+    }
+
+    .presentation-container h3 {
+        font-size: 50px;
+    }
+}
