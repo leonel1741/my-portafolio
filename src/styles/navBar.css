@@ -185,5 +185,10 @@
         justify-content: space-around;
         gap: 2rem;
     }
+}
 
+@media (min-width: 1024px) {
+    .nav-item a {
+        font-size: 25px;
+    }
 }

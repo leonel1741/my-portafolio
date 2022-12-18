@@ -50,7 +50,7 @@
 .presentation-item h1 {
     text-align: left;
     white-space: nowrap;
-    animation: typingH1 1.5s alternate steps(3) 0.3s,
+    animation: typingH1 1.5s alternate steps(4) 0.3s,
         blink .5s infinite step-end alternate;
     overflow: hidden;
     font-size: 35px;
@@ -71,29 +71,10 @@
 .presentation-item h3 {
     text-align: left;
     font-size: 30px;
-    /* width: 100%; */
     margin: 0;
     min-height: 40px;
-    /* padding: 0 15px; */
-    /* position: relative; */
     border-right: 0.08em solid #666;
 }
-
-/* .presentation-item h3::before {
-    content: " ";
-    height: 100px;
-    color: aqua;
-    width: 10px;
-} */
-
-/* @keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-} */
 
 @keyframes typingH1 {
     from {
@@ -102,7 +83,7 @@
     }
 
     to {
-        width: 3.5ch;
+        width: 4ch;
     }
 }
 
@@ -142,5 +123,51 @@
 
     .presentation-container h3 {
         font-size: 50px;
+        min-height: 60px;
+        transition: .5s all linear;
+    }
+}
+
+@media (min-width: 1024px) {
+    .presentation-container {
+        flex-direction: row-reverse;
+    }
+
+    .logo {
+        width: 43%;
+        max-width: 400px;
+    }
+
+    .presentation-item {
+        width: 57%;
+    }
+
+    .presentation-item h1 {
+        font-size: 80px;
+    }
+
+    .presentation-item h2 {
+        font-size: 80px
+    }
+
+    .presentation-item h3 {
+        font-size: 58px;
+        min-height: 70px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .logo {
+        width: 50%;
+        max-width: 400px;
+    }
+
+    .presentation-item {
+        width: 50%;
+    }
+
+    .presentation-item h3 {
+        font-size: 70px;
+        min-height: 85px;
     }
 }
