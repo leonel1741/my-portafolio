@@ -14,10 +14,10 @@ const AboutMe = ({ scrollHeight, id }) => {
                 <div className={`about-me-item ${scrollHeight > 150 ? 'visible' : ''}`}>
                     <div className='description'>
                         <p>
-                            Hi, Soy desarrollador web Full Stack me gusta mucho la programacion tanto la parte del Front End como la del Back End. Soy una persona proactiva, comprometida con el trabajo.
+                            Hi, I am a Full Stack web developer, I really like programming, both the Front End and the Back End. I am a proactive person, committed to work.
                         </p>
                         <p>
-                            Actualmente estudio en el programa Desarrollo Web Full-Stack y Ciencias de la Computacion en Academlo.
+                            I am currently studying in the Full-Stack Web Development and Computer Science program at Academlo.
                         </p>
                     </div>
 
@@ -41,14 +41,14 @@ const AboutMe = ({ scrollHeight, id }) => {
                                 <span>2022-{'(Egresado)'}</span>
                                 <br />
                                 <p>
-                                    Desarrollo Web Full-Stack y Ciencias de la Computacion - Academlo
+                                    Full-Stack Web Development and Computer Science - Academlo
                                 </p>
                             </div>
                             <div className='study'>
                                 <span>2017-{'(Cursando)'}</span>
                                 <br />
                                 <p>
-                                    Carrera de Informactica - Universidad Mayor de San Andres - UMSA
+                                    Carrera de Informatica - Universidad Mayor de San Andres - UMSA
                                 </p>
                             </div>
                         </li>
