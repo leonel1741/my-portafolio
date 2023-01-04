@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../styles/presentation.css';
 import coverVideo from '../assets/videos/cover-video.mp4';
 import logoPersonal from '../assets/logo-personal.png';
+import cv from '../assets/pdf/CV.pdf';
 
 const Presentation = () => {
 
@@ -11,8 +12,6 @@ const Presentation = () => {
     const [delta, setDelta] = useState(200 - Math.random() * 100);
 
     useEffect(() => {
-  
-
       
         const tick = () => {
             const toRotate = [ "FullStack Developer", "FrontEnd Developer", "BackEnd Developer" ];
@@ -62,6 +61,23 @@ const Presentation = () => {
                 <div><h2>I'm Leonel</h2></div>
                 <div><h3>{text}</h3></div>
             </div>
+            <ul className='presentation-contact'>
+                <li className='presentation-contact-item'>
+                    <a href={cv} target='_blank'>CV</a>
+                </li>
+
+                <li className='presentation-contact-item'>
+                    <a href="" target='_blank'>
+                        <i className="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+
+                <li className='presentation-contact-item'>
+                    <a href="https://github.com/leonel1741" target='_blank'>
+                        <i className="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     );
 };

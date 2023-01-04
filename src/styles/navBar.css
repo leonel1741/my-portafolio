@@ -19,7 +19,7 @@
     padding-top: 15px;
     font-size: 25px;
     transition: 1s all linear;
-    animation: logoMovement 3s infinite ease-in ;
+    animation: logoMovement 3s infinite ease-in;
 }
 
 .navbar-brand {

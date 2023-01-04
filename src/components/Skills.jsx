@@ -7,7 +7,7 @@ import gitLogo from '../assets/git-logo.png';
 import reactLogo from '../assets/react-logo.png';
 import reduxLogo from '../assets/redux-logo.png';
 import nodeLogo from '../assets/node-logo.png';
-import postgresqlLogo from '../assets/postgresql-logo.jpg';
+import postgresqlLogo from '../assets/postgresql-logo.png';
 import sequelizeLogo from '../assets/sequelize-logo.png';
 import coverVideo from '../assets/videos/cover-video-aboutme.mp4';
 
@@ -28,8 +28,8 @@ const Skills = ( { scrollHeight, id } ) => {
     return (
         <div className='skills-container' id={id}>
             <video className='video' src={coverVideo} autoPlay loop muted />
-            <h1 className={`h1 ${scrollHeight > 800 && scrollHeight < 1600 ? 'title-is-visible' : ''}`}>Skills</h1>
-            <ul className={`skills-section ${scrollHeight > 800 && scrollHeight < 1800 ? 'skills-visible' : ''}`}>
+            <h1 className={`h1 ${scrollHeight > 800 ? 'title-is-visible' : ''}`}>Skills</h1>
+            <ul className={`skills-section ${scrollHeight > 800 ? 'skills-visible' : ''}`}>
                 {
                     imagesSkills.map(image => (
                         <li key={image} className='image-section' >
