@@ -86,3 +86,23 @@ textarea {
     transform: scale(1.3);
     box-shadow: 0 10px 10px;
 }
+
+@media (min-width: 768px) {
+    .contact-me-container h1 {
+        font-size: 50px;
+    }
+
+    .form-container {
+        font-size: 20px;
+    }
+
+    .form-container button {
+        font-size: 25px;
+    }
+
+    .contact-item a {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+    }
+}

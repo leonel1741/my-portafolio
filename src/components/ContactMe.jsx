@@ -9,15 +9,19 @@ const ContactMe = ({ scrollHeight, id }) => {
         event.preventDefault();
 
         emailjs.sendForm('service_98pl12b', 'template_fbhiohj', event.target, '9xW513JoPdnwhdE14')
-            .then(res => console.log(res))
+            .then(res => {
+                console.log(res);
+                alert("Message send successfully");
+            })
             .catch(error => console.log(error));
+        form.reset();
     }
 
     return (
         <div className={`contact-me-container ${scrollHeight > 2500 ? 'contact-me-container-visible' : ''}`} id={id}>
             <div className='overlay'></div>
             <h1>Contact Me</h1>
-            <form className='form-container' onSubmit={submit}>
+            <form className='form-container'id='form' onSubmit={submit}>
                 <div className='input-section'>
                     <label htmlFor="name">Name / Company</label>
                     <input

@@ -89,9 +89,7 @@
 
 @media (min-width: 768px) {
     .about-me-container {
-        /* height: 65vh; */
         width: 100%;
-        /* gap: 0; */
     }
 
     .h1.title-visible {
