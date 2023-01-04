@@ -38,14 +38,14 @@ const AboutMe = ({ scrollHeight, id }) => {
                         </li>
                         <li className='studies'>
                             <div className='study'>
-                                <span>2022-{'(Egresado)'}</span>
+                                <span>2022-{'(Graduated)'}</span>
                                 <br />
                                 <p>
                                     Full-Stack Web Development and Computer Science - Academlo
                                 </p>
                             </div>
                             <div className='study'>
-                                <span>2017-{'(Cursando)'}</span>
+                                <span>2017-{'(Studying)'}</span>
                                 <br />
                                 <p>
                                     Carrera de Informatica - Universidad Mayor de San Andres - UMSA
