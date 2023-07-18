@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/proyects.css';
 import ecommerceImage from '../assets/imagesProyects/E-commerce.png';
 import rickAndMortyImage from '../assets/imagesProyects/rick-and-morty.png';
 import pokedexImage from '../assets/imagesProyects/pokedex.png';
 import ecommerceWithReactImage from '../assets/imagesProyects/e-commerce-with-react.png';
+import backendImage from '../assets/imagesProyects/back-end.png'
 
 const Proyects = ({ scrollHeight, id }) => {
+
     return (
         <div className='proyects-container' id={id}>
             <h1>Proyects</h1>
             <ul className='proyects-section'>
+                
                 <li className={`proyect-item proyect-item-left ${scrollHeight > 1600 ? 'proyect-visible-left' : ''}`}>
                     <div className='section'>
                         <img src={ecommerceImage} alt="" className='image-proyect' />
@@ -75,6 +78,36 @@ const Proyects = ({ scrollHeight, id }) => {
                                     Look Project
                                 </a>
                                 <a href="https://github.com/leonel1741/e-commerce-with-react-academlo" target='_blank'>
+                                    Look Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li className={`proyect-item proyect-item-left ${scrollHeight > 2400 ? 'proyect-visible-left' : ''}`}>
+                    <div className='section'>
+                        <img src={backendImage} alt="" className='image-proyect' />
+                        <div className='hover'>
+                            <h2>Video Courses - API</h2>
+                            <p>Project carried out for the creation of an API Video Courses</p>
+                            <div className='btn-link-proyect'>
+                                <a href="https://github.com/leonel1741/video-courses-api" target='_blank'>
+                                    Look Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li className={`proyect-item proyect-item-right ${scrollHeight > 2600 ? 'proyect-visible-right' : ''}`}>
+                    <div className='section'>
+                        <img src={backendImage} alt="" className='image-proyect' />
+                        <div className='hover'>
+                            <h2>E-Commerce - API</h2>
+                            <p>Project carried out for the creation of an API E-Commerce</p>
+                            <div className='btn-link-proyect'>
+                                <a href="https://github.com/leonel1741/ecommerse-api" target='_blank'>
                                     Look Repository
                                 </a>
                             </div>
